@@ -1,0 +1,60 @@
+﻿@namespace NoisyVolt.Admin.Components
+@using NoisyVolt.Admin.Models.Submissions
+
+@using NoisyVolt.Models
+
+
+<h3>Submit Web Page</h3>
+
+<EditForm Model="@webPageSubmission" OnValidSubmit="HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+ 
+    <p>
+        <label>
+            Page Url:
+            <input type="url" @bind-value="webPageSubmission.PageUrl" />
+        </label>
+    </p>
+    <p>
+        <label>
+            Subjects:
+            <InputText @bind-Value="webPageSubmission.Subjects" />
+        </label>
+    </p>
+
+    <p>
+        <label>
+            Subjects:
+            <InputCheckbox @bind-Value="webPageSubmission.CrawlFromHere" />
+        </label>
+    </p>
+
+
+    <button type="submit">Submit</button>
+
+</EditForm>
+
+@code {
+    private WebPageSubmission webPageSubmission = new();
+
+    private async Task HandleValidSubmit(){
+
+        Submission sub = new Submission();
+        
+        sub.Subjects = webPageSubmission.Subjects;
+        sub.SubmissionType = "webpage";
+        sub.PageUrl = webPageSubmission.PageUrl.AbsoluteUri;
+
+        HttpClient cl = new HttpClient();
+       
+        try{
+            await cl.PostAsJsonAsync("https://localhost:7108/Submission", sub);
+        }
+        catch (Exception ex){
+            var e = ex.Message;
+        }
+
+    }
+}

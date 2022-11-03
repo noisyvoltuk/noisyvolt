@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NoisyVolt.Admin", "NoisyVolt.Admin\NoisyVolt.Admin.csproj", "{A419E0F2-E695-4AE1-A26D-6D435D0A044D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NoisyVolt.MainSite", "NoisyVolt.MainSite\NoisyVolt.MainSite.csproj", "{ED320FE1-CE99-4716-A712-29E874FFC635}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NoisyVolt.Services", "NoisyVolt.Services\NoisyVolt.Services.csproj", "{E49BA119-19FB-4008-A95C-051123CE2FEC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NoisyVolt.Models", "NoisyVolt.Models\NoisyVolt.Models.csproj", "{D03399E3-66C4-41CC-B205-08A881BBFEEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoisyVolt.Api", "NoisyVolt.Api\NoisyVolt.Api.csproj", "{120A89E2-C288-4B35-BF13-6FEDA65E5248}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoisyVolt.Offline", "NoisyVolt.Offline\NoisyVolt.Offline.csproj", "{CB96E76A-0C39-440B-8033-191DF4E64BF9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A419E0F2-E695-4AE1-A26D-6D435D0A044D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A419E0F2-E695-4AE1-A26D-6D435D0A044D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A419E0F2-E695-4AE1-A26D-6D435D0A044D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A419E0F2-E695-4AE1-A26D-6D435D0A044D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED320FE1-CE99-4716-A712-29E874FFC635}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED320FE1-CE99-4716-A712-29E874FFC635}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED320FE1-CE99-4716-A712-29E874FFC635}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED320FE1-CE99-4716-A712-29E874FFC635}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E49BA119-19FB-4008-A95C-051123CE2FEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E49BA119-19FB-4008-A95C-051123CE2FEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E49BA119-19FB-4008-A95C-051123CE2FEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E49BA119-19FB-4008-A95C-051123CE2FEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D03399E3-66C4-41CC-B205-08A881BBFEEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D03399E3-66C4-41CC-B205-08A881BBFEEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D03399E3-66C4-41CC-B205-08A881BBFEEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D03399E3-66C4-41CC-B205-08A881BBFEEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{120A89E2-C288-4B35-BF13-6FEDA65E5248}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{120A89E2-C288-4B35-BF13-6FEDA65E5248}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{120A89E2-C288-4B35-BF13-6FEDA65E5248}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{120A89E2-C288-4B35-BF13-6FEDA65E5248}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB96E76A-0C39-440B-8033-191DF4E64BF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB96E76A-0C39-440B-8033-191DF4E64BF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB96E76A-0C39-440B-8033-191DF4E64BF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB96E76A-0C39-440B-8033-191DF4E64BF9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F04FA6F2-B654-4C0E-B1A2-AE79352A97BC}
+	EndGlobalSection
+EndGlobal

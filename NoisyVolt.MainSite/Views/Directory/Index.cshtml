@@ -1,0 +1,26 @@
+﻿@model IEnumerable<NoisyVolt.Models.EmbedCard>
+
+@{
+    ViewData["Title"] = "View";
+}
+
+<style>
+    .embed-card-std {
+        background: teal;
+        width:400px;
+    }
+
+    .embed-card-std img{
+        width: 400px;
+    }
+</style>
+
+<h1>Results</h1>
+
+
+@foreach (var item in Model) {
+       
+    @Html.Raw(item.EmbedHtml)
+           
+}
+
